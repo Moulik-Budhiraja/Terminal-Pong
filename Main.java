@@ -130,7 +130,6 @@ public class Main {
                 || computerPaddleY + 2 == ballPos[1]) {
               ballVel[0] = -ballVel[0];
 
-
             } else {
               playerWon = true;
               drawGame(playerPaddleY, computerPaddleY, ballPos);
@@ -147,10 +146,10 @@ public class Main {
 
       if (playerWon) {
         moveCursor(17, 17);
-        System.out.print("\033[1;32mPlayer Won!\033[0m");
+        System.out.println("\033[1;32mPlayer Won!\033[0m\n");
       } else {
         moveCursor(15, 17);
-        System.out.print("\033[1;31mComputer Won!\033[0m");
+        System.out.println("\033[1;31mComputer Won!\033[0m\n");
       }
 
       System.out.print("\033[?25h");
