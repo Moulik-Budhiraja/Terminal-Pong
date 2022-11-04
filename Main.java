@@ -255,7 +255,7 @@ public class Main {
 
   public static int computerMove(int computerPaddleY, int[] ballPos) {
     // 1 in 7 chance of blundering
-    if (Math.random() < 0.2) {
+    if (Math.random() < 0.14285714285714285) {
       return 0;
     }
 
